@@ -88,7 +88,7 @@
     
     sudo systemctl stop systemd-resolved
     sudo systemctl disable systemd-resolved
-    ```
+    
     
 1. Перейдите в веб-интерфейс Pi-hole по адресу:
     ```
