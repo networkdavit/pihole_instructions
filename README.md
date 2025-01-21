@@ -69,12 +69,6 @@
     pip3 install setuptools
     ```
 
-2. Остановите и отключите `systemd-resolved` (по необходимости):
-    ```bash
-    sudo systemctl stop systemd-resolved
-    sudo systemctl disable systemd-resolved
-    ```
-
 ## Шаг 4: Запуск контейнера Pi-hole
 
 1. Запустите контейнер с Pi-hole:
@@ -89,6 +83,12 @@
 
 ## Шаг 5: Доступ к веб-интерфейсу Pi-hole
 
+Остановите и отключите `systemd-resolved` (по необходимости):
+    ```bash
+    sudo systemctl stop systemd-resolved
+    sudo systemctl disable systemd-resolved
+    ```
+    
 1. Перейдите в веб-интерфейс Pi-hole по адресу:
     ```
     http://ubuntu_ip_address/admin/
